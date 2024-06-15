@@ -108,9 +108,35 @@ h3.heading {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     input {
       border: var(--border0);
       padding: 0.5rem 0.8rem;
+    }
+    .btn {
+      padding: 0.5rem;
+    }
+  }
+  .content {
+    border: var(--border0);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    h3 {
+      color: var(--main-clr);
+      margin: 1rem 0;
+    }
+    .temperature {
+      font-size: 1.2rem;
+      font-weight: 500;
+      display: inline-block;
+      color: var(--main-clr);
+    }
+    .infos {
+      span {
+        display: inline-block;
+        margin: 0.5rem;
+      }
     }
   }
 }
