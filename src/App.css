@@ -1,0 +1,116 @@
+/* custom css file made by jeandoe */
+
+/* import section starts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* initialisation */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+/* root varibales */
+
+:root {
+  --main-clr: #513dad;
+  --white: #fff;
+  --black: #1c2726;
+  --light-clr: #848a91;
+  --body-font: "Poppins", Arial, sans-serif;
+  --border0: 1px solid rgba(0, 0, 0, 0.05);
+  --border1: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* base of code */
+
+html {
+  font-size: 90%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--body-font);
+  padding: 1rem;
+}
+
+input {
+  font-family: var(--body-font);
+}
+
+/* reusable classes */
+
+.heading {
+  color: var(--black);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+h2.heading {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+h3.heading {
+  font-size: 0.938rem;
+}
+.container {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 0.3rem 0.5rem;
+  background: var(--white);
+  font-family: var(--body-font);
+  border: var(--border0);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    background: #fafcfc;
+  }
+}
+
+.icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: var(--border1);
+  padding: 0.1rem 0.2rem;
+  &:hover {
+    transition: color 0.2s linear;
+    color: var(--light-clr);
+  }
+}
+
+/* weather app section starts */
+
+.weather {
+  border: var(--border0);
+  .search_engine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+      border: var(--border0);
+      padding: 0.5rem 0.8rem;
+    }
+  }
+}
